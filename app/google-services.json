@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "589566974444",
+    "firebase_url": "https://metzy-ba40a.firebaseio.com",
+    "project_id": "metzy-ba40a",
+    "storage_bucket": "metzy-ba40a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589566974444:android:9f1f7859a18111a1f908c9",
+        "android_client_info": {
+          "package_name": "com.example.metzy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589566974444-n8o5tc7bj1oknenf96gi00220ajje6ji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgauMQCmV6a-A3WtncDVq8UvHDVyKbp28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589566974444-n8o5tc7bj1oknenf96gi00220ajje6ji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

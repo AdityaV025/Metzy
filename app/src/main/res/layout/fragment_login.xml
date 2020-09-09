@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="28dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/loginLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in_to_continue"
+        android:fontFamily="@font/raleway_black"
+        android:textColor="@color/text_color"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_address"
+        android:fontFamily="@font/raleway_bold"
+        android:layout_below="@+id/loginLabel"
+        android:layout_marginTop="32dp"
+        android:textSize="15sp"
+        android:textColor="@color/text_color"/>
+
+    <EditText
+        android:id="@+id/emailEditTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLabel"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/your_email_address"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:fontFamily="@font/raleway_bold"
+        android:layout_below="@+id/emailEditTextLogin"
+        android:layout_marginTop="21dp"
+        android:textSize="15sp"
+        android:textColor="@color/text_color"/>
+
+    <EditText
+        android:id="@+id/passwordEditTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLabel"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/your_password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditTextLogin"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/login_bg"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:fontFamily="@font/raleway_medium"
+        android:textSize="17sp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

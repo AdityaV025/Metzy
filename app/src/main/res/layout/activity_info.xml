@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity"
+    android:background="@color/white">
+
+    <include layout="@layout/simple_toolbar"
+        android:id="@+id/simpleToolBar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/simpleToolBar"
+        android:padding="17dp">
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_bold"
+            android:textColor="@color/text_color" />
+
+        <EditText
+            android:id="@+id/nameEditTextUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/nameLabel"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/enter_your_name"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:id="@+id/ageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_bold"
+            android:textColor="@color/text_color"
+            android:layout_below="@+id/nameEditTextUpdate"
+            android:layout_marginTop="21dp"/>
+
+        <EditText
+            android:id="@+id/ageEditTextUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/ageLabel"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/your_age"
+            android:inputType="number"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_bold"
+            android:textColor="@color/text_color"
+            android:layout_below="@+id/ageEditTextUpdate"
+            android:layout_marginTop="21dp"/>
+
+        <EditText
+            android:id="@+id/phoneEditTextUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/phoneLabel"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/text_color"
+            android:maxLength="10"/>
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_address"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_below="@+id/phoneEditTextUpdate"
+            android:layout_marginTop="21dp"
+            android:textSize="15sp"
+            android:textColor="@color/text_color"/>
+
+        <EditText
+            android:id="@+id/emailEditTextUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailLabel"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/your_email_address"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/text_color"/>
+
+        <Button
+            android:id="@+id/UpdateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailEditTextUpdate"
+            android:layout_marginTop="31dp"
+            android:text="@string/update_info"
+            android:textAllCaps="false"
+            android:fontFamily="@font/raleway_medium"
+            android:textSize="17sp"
+            android:background="@color/accent_color"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
